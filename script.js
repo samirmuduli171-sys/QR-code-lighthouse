@@ -285,7 +285,7 @@ const menuData = [
         },
         {
           name: "Egg Chilli",
-          price: "₹260",
+          price: "170",
           description: "Fried egg cubes tossed in spicy chilli sauce with onions and capsicum. A fiery Indo Chinese fusion favorite.",
           type: "nonveg"
         },
@@ -363,7 +363,7 @@ const menuData = [
         },
         {
           name: "Chilli Chicken",
-          price: "₹325",
+          price: "240",
           description: "Boneless chicken tossed in a spicy chilli sauce with onions and capsicum. Classic desi Chinese with bold, savory heat.",
           type: "nonveg"
         },
@@ -442,7 +442,7 @@ const menuData = [
         },
         {
           name: "Mutton Chilli",
-          price: "₹420",
+          price: "310",
           description: "A fiery Indo Chinese twist fried mutton chunks tossed in a spicy chilli sauce. Spicy, saucy, and addictive.",
           type: "nonveg"
         },
@@ -466,7 +466,7 @@ const menuData = [
         },
         {
           name: "Fish Manchurian Chilli",
-          price: "₹420",
+          price: "310",
           description: "Choose your style crispy Fish, saucy Manchurian, or bold Chilly Fish. Each one delivers rich flavor and crunch.",
           type: "nonveg"
         },
@@ -495,7 +495,7 @@ const menuData = [
         },
         {
           name: "Prawns Chilli",
-          price: "₹475",
+          price: "350",
           description: "Crisp prawns tossed in a hot chili sauce with onions and capsicum. A spicy seafood favorite with an Indo Chinese punch.",
           type: "nonveg"
         },
@@ -871,13 +871,13 @@ const menuData = [
         },
         {
           name: "Schezwan Fried Rice",
-          price: "₹240",
+          price: "170",
           description: "A spicy Indo Chinese rice dish tossed with vegetables and bold Schezwan sauce. Smoky, fiery, and full of umami punch.",
           type: "veg"
         },
         {
           name: "Veg Fried Rice",
-          price: "₹220",
+          price: "160",
           description: "Classic Indo Chinese fried rice loaded with veggies, soy sauce, and a smoky wok flavor. Light, fluffy, and full of texture.",
           type: "veg"
         },
@@ -930,7 +930,7 @@ const menuData = [
         },
         {
           name: "Mixed Fried Rice",
-          price: "₹380",
+          price: "280",
           description: "The best of all worlds meat, seafood, and eggs combined with fragrant fried rice. Rich, hearty, and loaded with proteins.",
           type: "nonveg"
         },
@@ -942,13 +942,13 @@ const menuData = [
         },
         {
           name: "Chicken Hakka Noodles",
-          price: "₹240",
+          price: "180",
           description: "Thin noodles tossed with chicken, veggies, and Asian sauces. Street style flavor with juicy bites of chicken.",
           type: "nonveg"
         },
         {
           name: "Chicken Schezwan Noodles",
-          price: "₹200",
+          price: "180",
           description: "Spicy noodles with chicken and chilli garlic sauce. Perfect for heat seekers!",
           type: "nonveg"
         }
@@ -1106,7 +1106,7 @@ const menuData = [
         },
         {
           name: "Fish In Hot Garlic Sauce",
-          price: "₹430",
+          price: "320",
           description: "Fried fish fillets tossed in a bold garlic chili sauce. Spicy, aromatic and full of Indo Chinese flavor.",
           type: "nonveg"
         },
@@ -1186,7 +1186,7 @@ const menuData = [
         },
         {
           name: "Chapati",
-          price: "₹40",
+          price: "30",
           description: "Light, soft, and oil free whole wheat flatbread. A perfect partner for any curry.",
           type: "veg"
         },
@@ -1250,37 +1250,37 @@ const menuData = [
         items: [
         {
           name: "Mixed Green Salad",
-          price: "₹150",
+          price: "100",
           description: "A crisp and colorful mix of lettuce, cucumber, carrots, onions, and more, tossed with a light dressing. Fresh, crunchy, and perfect as a light bite or healthy side.",
           type: "veg"
         },
         {
           name: "Greek Salad",
-          price: "₹180",
+          price: "280",
           description: "A Mediterranean classic with juicy tomatoes, cucumbers, olives, onions, and crumbly Feta Cheese, dressed in olive oil and herbs. It's vibrant, tangy, and refreshingly satisfying.",
           type: "veg"
         },
         {
           name: "Veg Manchow Soup",
-          price: "₹180",
+          price: "130",
           description: "A bold, spicy Indo Chinese soup brimming with chopped veggies, garlic, soy sauce, and ginger. Topped with crispy fried noodles, it's the ultimate savory starter with layers of flavor and crunch.",
           type: "veg"
         },
         {
           name: "Veg Hot And Sour Soup",
-          price: "₹180",
+          price: "130",
           description: "A lively mix of heat and tang, this thick soup is loaded with vegetables, soy sauce, chilli oil, and vinegar. It's bold, appetizing, and guaranteed to wake up your taste buds.",
           type: "veg"
         },
         {
           name: "Veg Clear Soup",
-          price: "₹135",
+          price: "110",
           description: "Light, clean, and delicately flavored, our clear soup features finely chopped vegetables in a clear seasoned broth. Ideal for health conscious diners seeking simplicity and warmth.",
           type: "veg"
         },
         {
           name: "Veg Tomato Soup",
-          price: "₹180",
+          price: "110",
           description: "A classic favorite made from slow simmered ripe tomatoes, lightly spiced and finished with cream for a smooth, velvety texture. Served hot and garnished with herbs comforting and timeless in every spoonful.",
           type: "veg"
         }
@@ -1291,18 +1291,18 @@ const menuData = [
         items: [
         {
           name: "Chicken Manchow Soup",
-          price: "₹215",
+          price: "160",
           type: "nonveg"
         },
         {
           name: "Chicken Clear Soup",
-          price: "₹175",
+          price: "130",
           description: "Simple, light, and nourishing this chicken broth is infused with herbs and packed with lean chicken Pieces Ideal for those who love clean, delicate flavors.",
           type: "nonveg"
         },
         {
           name: "Chicken Hot And Sour Soup",
-          price: "₹215",
+          price: "160",
           description: "A spicy tangy combination of chicken, chilies, and vinegar in a thick, hearty broth. Bursting with flavor and heat, it's the ultimate pick me up for cold days or bold cravings.",
           type: "nonveg"
         },
@@ -1329,13 +1329,13 @@ const menuData = [
         items: [
         {
           name: "Salted French Fries",
-          price: "₹160",
+          price: "120",
           description: "Classic golden fries sprinkled with just the right amount of salt. Crisp outside, soft inside everyone's favorite snack.",
           type: "veg"
         },
         {
           name: "Peri Peri French Fries",
-          price: "₹190",
+          price: "140",
           description: "Crispy fries tossed in bold peri peri seasoning. Spicy, zesty, and totally addictive.",
           type: "veg"
         }
@@ -1352,13 +1352,13 @@ const menuData = [
         items: [
         {
           name: "Plain Curd",
-          price: "₹45",
+          price: "30",
           description: "Simple, wholesome curd served chilled. Smooth, mildly tangy, and a natural digestive side.",
           type: "veg"
         },
         {
           name: "Roasted Papad",
-          price: "₹70",
+          price: "50",
           description: "Thin lentil wafers roasted until crisp and aromatic. A healthy, crunchy bite to accompany any Indian meal.",
           type: "veg"
         },

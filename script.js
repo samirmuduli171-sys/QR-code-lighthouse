@@ -1,4 +1,65 @@
-const menuData = [
+﻿const menuData = [
+  {
+    category: "entry-soups",
+    title: "Entry Soup Bowl",
+    subcategories: [
+      {
+        name: "Veg",
+        items: [
+        {
+          name: "Tomato Soup",
+          price: "110",
+          type: "veg"
+        },
+        {
+          name: "Manchow Soup",
+          price: "130",
+          type: "veg"
+        },
+        {
+          name: "Sweet Corn Soup",
+          price: "130",
+          type: "veg"
+        },
+        {
+          name: "Hot/Sour Soup",
+          price: "130",
+          type: "veg"
+        },
+        {
+          name: "Clear Soup",
+          price: "110",
+          type: "veg"
+        }
+        ]
+      },
+      {
+        name: "Non Veg",
+        items: [
+        {
+          name: "Manchow Soup/Chicken",
+          price: "160",
+          type: "nonveg"
+        },
+        {
+          name: "Egg/Chicken",
+          price: "150",
+          type: "nonveg"
+        },
+        {
+          name: "Hot/Sour Soup/Chicken",
+          price: "160",
+          type: "nonveg"
+        },
+        {
+          name: "Clear Soup/Chicken",
+          price: "130",
+          type: "nonveg"
+        }
+        ]
+      }
+    ]
+  },
   {
     category: "starters",
     title: "Starters",
@@ -14,7 +75,7 @@ const menuData = [
         {
           name: "Paneer Chilli",
           price: "249",
-          description: "Cubes of soft paneer sautéed with bell peppers, onions, and green chilies in a spicy Indo Chinese sauce. A fiery, tangy treat with just the right amount of crunch and softness.",
+          description: "Cubes of soft paneer sautÃ©ed with bell peppers, onions, and green chilies in a spicy Indo Chinese sauce. A fiery, tangy treat with just the right amount of crunch and softness.",
           type: "veg"
         },
         {
@@ -26,7 +87,7 @@ const menuData = [
         {
           name: "Paneer 65",
           price: "249",
-          description: "South Indian style spiced paneer cubes deep fried to crispy perfection. Flavored with curry leaves, chilies, and signature spices—spicy, aromatic, and addictive.",
+          description: "South Indian style spiced paneer cubes deep fried to crispy perfection. Flavored with curry leaves, chilies, and signature spicesâ€”spicy, aromatic, and addictive.",
           type: "veg"
         },
         {
@@ -103,7 +164,7 @@ const menuData = [
         {
           name: "Gobhi Pepper Dry",
           price: "190",
-          description: "Golden fried gobhi sautéed in a smoky black pepper sauce with garlic and capsicum. A peppery delight for spice lovers.",
+          description: "Golden fried gobhi sautÃ©ed in a smoky black pepper sauce with garlic and capsicum. A peppery delight for spice lovers.",
           type: "veg"
         },
         {
@@ -115,7 +176,7 @@ const menuData = [
         {
           name: "Mushroom Pepper Dry",
           price: "220",
-          description: "A dry style starter with mushrooms sautéed in black pepper and herbs. Smoky, spicy, and irresistibly earthy with a gentle crunch in every bite.",
+          description: "A dry style starter with mushrooms sautÃ©ed in black pepper and herbs. Smoky, spicy, and irresistibly earthy with a gentle crunch in every bite.",
           type: "veg"
         },
         {
@@ -136,153 +197,29 @@ const menuData = [
           description: "Juicy mushrooms tossed in a fragrant garlic sauce with herbs and mild spices. Aromatic, savory, and perfect for garlic lovers who enjoy bold yet balanced flavors.",
           type: "veg"
         },
-        {
-          name: "Tomato Soup",
-          price: "110",
-          type: "veg"
-        },
-        {
-          name: "Manchow Soup",
-          price: "130",
-          type: "veg"
-        },
-        {
-          name: "Sweet Corn Soup",
-          price: "130",
-          type: "veg"
-        },
-        {
-          name: "Hot/Sour Soup",
-          price: "130",
-          type: "veg"
-        },
-        {
-          name: "Clear Soup",
-          price: "110",
-          type: "veg"
-        },
-        {
-          name: "Roast Papad",
-          price: "50",
-          type: "veg"
-        },
-        {
-          name: "Curd Plain",
-          price: "30",
-          type: "veg"
-        },
-        {
-          name: "Mayonnaise",
-          price: "40",
-          type: "veg"
-        },
         
         
         
-        {
-          name: "Harabara Kabab",
-          price: "240",
-          type: "veg"
-        },
-        {
-          name: "Tandoori Veg Platter",
-          price: "300",
-          type: "veg"
-        },
-        {
-          name: "Tandoori Veg Platter With Rice and Dal",
-          price: "440",
-          type: "veg"
-        },
-        {
-          name: "Fresh Lime Juice",
-          price: "60",
-          type: "veg"
-        },
-        {
-          name: "Fresh Lime Soda",
-          price: "80",
-          type: "veg"
-        },
-        {
-          name: "Water Bottle Half Ltr",
-          price: "10",
-          type: "veg"
-        },
-        {
-          name: "Water Bottle 1 Ltr",
-          price: "20",
-          type: "veg"
-        },
-        {
-          name: "Soda 250ml",
-          price: "25",
-          type: "veg"
-        },
-        {
-          name: "Soda 750ml",
-          price: "40",
-          type: "veg"
-        },
-        {
-          name: "Soft Drink 250ml",
-          price: "25",
-          type: "veg"
-        },
-        {
-          name: "Soft Drink 750ml",
-          price: "50",
-          type: "veg"
-        },
-        {
-          name: "Tandoori Roti Plain-Wheat",
-          price: "40",
-          type: "veg"
-        },
-        {
-          name: "Tandoori Butter Roti-Wheat",
-          price: "50",
-          type: "veg"
-        },
-        {
-          name: "Chapati/Pulka",
-          price: "30",
-          type: "veg"
-        },
-        {
-          name: "Wheat Parata",
-          price: "—",
-          type: "veg"
-        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         ]
       },
       {
         name: "Non Veg",
         items: [
-        {
-          name: "Egg Pepper Dry",
-          price: "190",
-          description: "Egg cubes sautéed with black pepper, onions, and bold spices. A dry style starter with real depth and heat.",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Manchurian",
-          price: "170",
-          description: "Crispy egg bites coated in tangy Manchurian sauce with garlic and soy. Spicy, saucy, and satisfying.",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Chilli",
-          price: "170",
-          description: "Fried egg cubes tossed in spicy chilli sauce with onions and capsicum. A fiery Indo Chinese fusion favorite.",
-          type: "nonveg"
-        },
-        {
-          name: "Egg 65",
-          price: "190",
-          description: "South Indian style egg cubes deep fried with curry leaves and chilli spice. Crispy and bold with real heat.",
-          type: "nonveg"
-        },
+        
+        
+        ,
+        
         {
           name: "Chicken Lollipop",
           price: "230",
@@ -322,13 +259,13 @@ const menuData = [
         {
           name: "Chicken Pepper Dry",
           price: "240",
-          description: "Chicken sautéed with black pepper, curry leaves, and spices. Spicy, smoky, and full of rustic South Indian heat.",
+          description: "Chicken sautÃ©ed with black pepper, curry leaves, and spices. Spicy, smoky, and full of rustic South Indian heat.",
           type: "nonveg"
         },
         {
           name: "Ginger Chicken",
           price: "240",
-          description: "A warm, spiced chicken dish infused with fresh ginger and sautéed in a tangy sauce. Comforting, flavorful, and unique.",
+          description: "A warm, spiced chicken dish infused with fresh ginger and sautÃ©ed in a tangy sauce. Comforting, flavorful, and unique.",
           type: "nonveg"
         },
         {
@@ -379,11 +316,7 @@ const menuData = [
           description: "Herb marinated chicken with mint, coriander, and green chilies. Earthy, fresh, and cooked over smoky heat for a mountain style kick.",
           type: "nonveg"
         },
-        {
-          name: "Chicken Reshmi Kabab",
-          price: "280",
-          type: "nonveg"
-        },
+        ,
         {
           name: "Fish Tawa Fry",
           price: "280",
@@ -401,251 +334,80 @@ const menuData = [
           price: "260",
           type: "nonveg"
         },
-        {
-          name: "Chicken Malai Kabab",
-          price: "280",
-          type: "nonveg"
-        },
-        {
-          name: "Mutton Ghee Roast",
-          price: "400",
-          description: "Mangalorean style dry roast with tender mutton cooked in ghee, red chilies, and spices. Fiery, rich, and aromatic.",
-          type: "nonveg"
-        },
-        {
-          name: "Mutton Pepper Fry",
-          price: "370",
-          description: "Slow cooked mutton sautéed with cracked black pepper, onions, and curry leaves. Spicy, dry, and full of southern heat.",
-          type: "nonveg"
-        },
-        {
-          name: "Mutton Chilli",
-          price: "310",
-          description: "A fiery Indo Chinese twist fried mutton chunks tossed in a spicy chilli sauce. Spicy, saucy, and addictive.",
-          type: "nonveg"
-        },
-        {
-          name: "Mutton Fry",
-          price: "320",
-          description: "Marinated mutton slow fried with onions and bold Indian spices. Crisp edged and rustic with strong flavors.",
-          type: "nonveg"
-        },
-        {
-          name: "Fish Hariyali Tikka",
-          price: "340",
-          description: "Boneless fish marinated in a green blend of mint, coriander, and yogurt, then grilled. Refreshing and smoky with herby goodness.",
-          type: "nonveg"
-        },
-        {
-          name: "Fish Schezwan",
-          price: "310",
-          description: "Crispy fish in fiery schezwan sauce with vegetables and chilies. Spicy, tangy, and packed with zest.",
-          type: "nonveg"
-        },
+        ,
+        
+        
+        ,
+        
+        ,
+        ,
         {
           name: "Fish Manchurian Chilli",
           price: "310",
           description: "Choose your style crispy Fish, saucy Manchurian, or bold Chilly Fish. Each one delivers rich flavor and crunch.",
           type: "nonveg"
         },
-        {
-          name: "Fish Tikka",
-          price: "360",
-          description: "Boneless fish marinated in tandoori spices and char grilled till golden. Smoky, juicy, and full of traditional flavor.",
-          type: "nonveg"
-        },
-        {
-          name: "Tandoori Prawns",
-          price: "380",
-          description: "Jumbo prawns marinated in spicy tandoori masala and grilled to perfection. Smoky, spicy, and irresistibly juicy.",
-          type: "nonveg"
-        },
-        {
-          name: "Prawns Pepper Dry",
-          price: "350",
-          description: "Succulent prawns tossed in black pepper and dry masalas. Bold and peppery with a coastal style kick.",
-          type: "nonveg"
-        },
-        {
-          name: "Prawns Manchurian",
-          price: "350",
-          type: "nonveg"
-        },
+        ,
+        ,
+        ,
+        
         {
           name: "Prawns Chilli",
           price: "350",
           description: "Crisp prawns tossed in a hot chili sauce with onions and capsicum. A spicy seafood favorite with an Indo Chinese punch.",
           type: "nonveg"
         },
-        {
-          name: "Manchow Soup/Chicken",
-          price: "160",
-          type: "nonveg"
-        },
-        {
-          name: "Egg/Chicken",
-          price: "150",
-          type: "nonveg"
-        },
-        {
-          name: "Hot/Sour Soup/Chicken",
-          price: "160",
-          type: "nonveg"
-        },
-        {
-          name: "Clear Soup/Chicken",
-          price: "130",
-          type: "nonveg"
-        },
         
         
-        {
-          name: "Mutton Chilly",
-          price: "310",
-          type: "nonveg"
-        },
-        
-        {
-          name: "Mutton Rogan Josh",
-          price: "360",
-          type: "nonveg"
-        },
-        {
-          name: "Tandoori Chicken Half",
-          price: "240",
-          type: "nonveg"
-        },
-        {
-          name: "Tandoori Chicken Full",
-          price: "450",
-          type: "nonveg"
-        },
         
         
-        {
-          name: "Chicken Phadi Kabab",
-          price: "250",
-          type: "nonveg"
-        },
-        {
-          name: "Kalmi Kabab -2",
-          price: "170",
-          type: "nonveg"
-        },
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         {
           name: "Chicken Malai Kabab",
           price: "280",
           type: "nonveg"
         },
-        {
-          name: "Chicken Sholey Kabab",
-          price: "260",
-          type: "nonveg"
-        },
-        {
-          name: "Afghani Kabab Half",
-          price: "280",
-          type: "nonveg"
-        },
-        {
-          name: "Afghani Kabab Full",
-          price: "540",
-          type: "nonveg"
-        },
+        
+        
+        
         {
           name: "Chicken Reshmi Kabab",
           price: "280",
           type: "nonveg"
         },
-        {
-          name: "Egg Omelet",
-          price: "60",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Masala Omelet",
-          price: "80",
-          type: "nonveg"
-        },
-        {
-          name: "Boiled Egg",
-          price: "60",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Chilly",
-          price: "170",
-          type: "nonveg"
-        },
         
         
         
-        {
-          name: "Egg Masala",
-          price: "170",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Pepper Masala",
-          price: "210",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Burji",
-          price: "90",
-          type: "nonveg"
-        },
-        {
-          name: "Chicken Tandoor Platter Mini",
-          price: "560",
-          description: "Chicken Tandoor Half, Kalmi Kabab -2 Pcs, Chicken Tikka, Reshmi Kabab",
-          type: "nonveg"
-        },
-        {
-          name: "Chicken Tandoor Platter Jumbo",
-          price: "1200",
-          description: "Chicken Tandoor Full, Kalmi Kabab -4 Pcs, Chicken Tikka, Reshmi Kabab, Malai Tikka",
-          type: "nonveg"
-        },
-        {
-          name: "Prawns Chilly",
-          price: "350",
-          type: "nonveg"
-        },
-        {
-          name: "Prawns Manchurian",
-          price: "350",
-          type: "nonveg"
-        },
         
         
         
-        {
-          name: "Anjal Fry",
-          price: "—",
-          type: "nonveg"
-        },
-        {
-          name: "Anjal Masala Fry",
-          price: "—",
-          type: "nonveg"
-        },
-        {
-          name: "Anjal Tawa Fry",
-          price: "—",
-          type: "nonveg"
-        },
-        {
-          name: "Fish Hot Garlic Sauce",
-          price: "320",
-          type: "nonveg"
-        },
         
-        {
-          name: "Fish 65/Manchurian/Chilly",
-          price: "310",
-          type: "nonveg"
-        },
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -660,12 +422,7 @@ const menuData = [
       {
         name: "Veg",
         items: [
-        {
-          name: "Jeera Rice",
-          price: "140",
-          description: "Steamed basmati rice tempered with aromatic cumin seeds and ghee. Simple, fragrant, and a classic pairing with curries.",
-          type: "veg"
-        },
+        
         {
           name: "Palak Khichdi",
           price: "190",
@@ -680,7 +437,7 @@ const menuData = [
         {
           name: "Palak Rice",
           price: "170",
-          description: "Spinach flavored rice sautéed with mild spices and herbs. Light, green, and flavorful.",
+          description: "Spinach flavored rice sautÃ©ed with mild spices and herbs. Light, green, and flavorful.",
           type: "veg"
         },
         {
@@ -943,7 +700,7 @@ const menuData = [
         {
           name: "Palak Paneer",
           price: "260",
-          description: "Fresh spinach purée cooked with tender paneer cubes, lightly spiced and finished with cream. Nutritious and comforting.",
+          description: "Fresh spinach purÃ©e cooked with tender paneer cubes, lightly spiced and finished with cream. Nutritious and comforting.",
           type: "veg"
         },
         {
@@ -1060,12 +817,7 @@ const menuData = [
       {
         name: "Veg",
         items: [
-        {
-          name: "Methi Roti",
-          price: "70",
-          description: "Whole wheat roti mixed with fresh fenugreek leaves [methi]. Nutty, mildly bitter, and packed with health benefits.",
-          type: "veg"
-        },
+        
         {
           name: "Garlic Naan",
           price: "90",
@@ -1139,11 +891,7 @@ const menuData = [
           price: "90",
           type: "veg"
         },
-        {
-          name: "Methi Roti",
-          price: "70",
-          type: "veg"
-        },
+        
         {
           name: "Lachadar Parata",
           price: "70",
@@ -1296,67 +1044,6 @@ const menuData = [
           name: "Mixed Veg Raita",
           price: "40",
           type: "veg"
-        }
-        ]
-      }
-    ]
-  },
-  {
-    category: "entry-soups",
-    title: "Entry Soup Bowl",
-    subcategories: [
-      {
-        name: "Veg",
-        items: [
-        {
-          name: "Tomato Soup",
-          price: "110",
-          type: "veg"
-        },
-        {
-          name: "Manchow Soup",
-          price: "130",
-          type: "veg"
-        },
-        {
-          name: "Sweet Corn Soup",
-          price: "130",
-          type: "veg"
-        },
-        {
-          name: "Hot/Sour Soup",
-          price: "130",
-          type: "veg"
-        },
-        {
-          name: "Clear Soup",
-          price: "110",
-          type: "veg"
-        }
-        ]
-      },
-      {
-        name: "Non Veg",
-        items: [
-        {
-          name: "Manchow Soup/Chicken",
-          price: "160",
-          type: "nonveg"
-        },
-        {
-          name: "Egg/Chicken",
-          price: "150",
-          type: "nonveg"
-        },
-        {
-          name: "Hot/Sour Soup/Chicken",
-          price: "160",
-          type: "nonveg"
-        },
-        {
-          name: "Clear Soup/Chicken",
-          price: "130",
-          type: "nonveg"
         }
         ]
       }
@@ -1690,17 +1377,17 @@ const menuData = [
         },
         {
           name: "Anjal Fry",
-          price: "—",
+          price: "â€”",
           type: "nonveg"
         },
         {
           name: "Anjal Masala Fry",
-          price: "—",
+          price: "â€”",
           type: "nonveg"
         },
         {
           name: "Anjal Tawa Fry",
-          price: "—",
+          price: "â€”",
           type: "nonveg"
         }
         ]
@@ -1849,7 +1536,7 @@ const menuData = [
         },
         {
           name: "Wheat Parata",
-          price: "—",
+          price: "â€”",
           type: "veg"
         },
         {
@@ -1917,7 +1604,7 @@ const sectionVisuals = {
 
     starters: {
         title: "STARTERS",
-        subtitle: "Crispy • Spicy • Fresh",
+        subtitle: "Crispy â€¢ Spicy â€¢ Fresh",
         images: [
             "assets/section-images/starters/starter-1.jpg",
             "assets/section-images/starters/starter-2.jpg",
@@ -1927,7 +1614,7 @@ const sectionVisuals = {
 
     rice: {
         title: "RICE & BIRYANI",
-        subtitle: "Aromatic • Rich • Comforting",
+        subtitle: "Aromatic â€¢ Rich â€¢ Comforting",
         images: [
             "assets/section-images/rice/rice-2.jpg",
             "assets/section-images/rice/rice-3.jpg",
@@ -1937,7 +1624,7 @@ const sectionVisuals = {
 
     "main-course": {
         title: "MAIN COURSE",
-        subtitle: "Rich • Traditional • Satisfying",
+        subtitle: "Rich â€¢ Traditional â€¢ Satisfying",
         images: [
             "assets/section-images/main-course/main-1.jpg",
             "assets/section-images/main-course/main-2.jpg",
@@ -1957,7 +1644,7 @@ const sectionVisuals = {
 
     "tandoor-nonveg": {
         title: "TANDOOR NON-VEG",
-        subtitle: "Smoky • Grilled • Juicy",
+        subtitle: "Smoky â€¢ Grilled â€¢ Juicy",
         images: [
             "assets/section-images/tandoor/tandoor-1.jpg",
             "assets/section-images/tandoor/tandoor-2.jpg",
@@ -1967,7 +1654,7 @@ const sectionVisuals = {
 
     seafood: {
         title: "SEAFOOD",
-        subtitle: "Fresh • Coastal • Flavourful",
+        subtitle: "Fresh â€¢ Coastal â€¢ Flavourful",
         images: [
             "assets/section-images/seafood/seafood-1.jpg",
             "assets/section-images/seafood/seafood-2.jpg",
@@ -1977,7 +1664,7 @@ const sectionVisuals = {
 
     breads: {
         title: "INDIAN BREADS",
-        subtitle: "Freshly Baked • Soft • Golden",
+        subtitle: "Freshly Baked â€¢ Soft â€¢ Golden",
         images: [
             "assets/section-images/breads/bread-1.jpg",
             "assets/section-images/breads/bread-2.jpg",
@@ -1987,7 +1674,7 @@ const sectionVisuals = {
 
     "cool-drinks": {
         title: "COOL DRINKS",
-        subtitle: "Chilled • Refreshing • Perfect Pairings",
+        subtitle: "Chilled â€¢ Refreshing â€¢ Perfect Pairings",
         images: [
             "assets/section-images/drinks/drink-1.jpg",
             "assets/section-images/drinks/drink-2.jpg",
@@ -2290,6 +1977,11 @@ searchInput.addEventListener("input", renderMenu);
 ========================= */
 
 renderMenu();
+
+
+
+
+
 
 
 

@@ -419,16 +419,6 @@ const menuData = [
           type: "nonveg"
         },
         {
-          name: "Afghani Kabab",
-          price: "₹380",
-          type: "nonveg"
-        },
-        {
-          name: "Chicken Shole Kabab",
-          price: "₹350",
-          type: "nonveg"
-        },
-        {
           name: "Mutton Ghee Roast",
           price: "400",
           description: "Mangalorean style dry roast with tender mutton cooked in ghee, red chilies, and spices. Fiery, rich, and aromatic.",
@@ -1075,12 +1065,6 @@ const menuData = [
           type: "nonveg"
         },
         {
-          name: "Chicken Masala Kadai",
-          price: "₹310",
-          description: "Tender chicken simmered in your choice of rich masala gravy or spicy kadai style tomato onion sauce. Robust and satisfying.",
-          type: "nonveg"
-        },
-        {
           name: "Chicken Butter Masala",
           price: "280",
           description: "Tender chicken pieces in a creamy, buttery tomato based gravy. Smooth, mildly sweet and utterly indulgent.",
@@ -1306,16 +1290,6 @@ const menuData = [
           description: "A spicy tangy combination of chicken, chilies, and vinegar in a thick, hearty broth. Bursting with flavor and heat, it's the ultimate pick me up for cold days or bold cravings.",
           type: "nonveg"
         },
-        {
-          name: "Egg Sweet Corn Soup",
-          price: "₹200",
-          type: "nonveg"
-        },
-        {
-          name: "Chicken Sweet Corn Soup",
-          price: "₹200",
-          type: "nonveg"
-        }
         ]
       }
     ]

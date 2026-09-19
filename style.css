@@ -2228,3 +2228,69 @@ header::after {
     }
 }
 
+
+/* =========================================================
+   VEG / NON-VEG SECTION FILTER
+   ========================================================= */
+
+.food-preference-filter {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.food-filter-btn {
+    border: 1px solid rgba(216,179,106,0.28);
+    background: rgba(255,255,255,0.03);
+    color: var(--muted);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.2s ease;
+}
+
+.food-filter-btn:hover {
+    border-color: rgba(216,179,106,0.55);
+    color: var(--text);
+    transform: translateY(-1px);
+}
+
+.food-filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #07111f;
+}
+
+.food-filter-btn.veg-filter.active {
+    background: #3fa65c;
+    border-color: #3fa65c;
+    color: #ffffff;
+}
+
+.food-filter-btn.nonveg-filter.active {
+    background: #b84a4a;
+    border-color: #b84a4a;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .food-preference-filter {
+        gap: 7px;
+        margin-bottom: 18px;
+    }
+
+    .food-filter-btn {
+        flex: 1;
+        padding: 9px 10px;
+        font-size: 10px;
+    }
+}
+

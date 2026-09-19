@@ -1997,14 +1997,20 @@ const sectionVisuals = {
 };
 
 
+const sectionFilterState = {};
+
 function renderMenu() {
 
-    const searchTerm = searchInput.value.toLowerCase().trim(); document.body.classList.toggle("search-active", searchTerm.length > 0);
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    document.body.classList.toggle(
+        "search-active",
+        searchTerm.length > 0
+    );
 
     menuContainer.innerHTML = "";
 
     let totalResults = 0;
-
 
     menuData.forEach(section => {
 
@@ -2015,37 +2021,49 @@ function renderMenu() {
             return;
         }
 
-
         const sectionItems = getAllItems(section);
 
+        const hasVeg = sectionItems.some(item => item.type === "veg");
+        const hasNonVeg = sectionItems.some(item => item.type === "nonveg");
+        const hasFoodFilter = hasVeg && hasNonVeg;
+
+        if (!(section.category in sectionFilterState)) {
+            sectionFilterState[section.category] = "all";
+        }
+
+        const selectedType = sectionFilterState[section.category];
 
         const filteredItems = sectionItems.filter(item => {
 
-            const searchableText = `
+            const matchesSearch = `
                 ${item.name}
-                ${item.description}
+                ${item.description || ""}
                 ${item.type}
                 ${item.subcategory || ""}
-            `.toLowerCase();
+            `.toLowerCase().includes(searchTerm);
 
-            return searchableText.includes(searchTerm);
+            const matchesType =
+                !hasFoodFilter ||
+                selectedType === "all" ||
+                item.type === selectedType;
+
+            return matchesSearch && matchesType;
         });
-
 
         if (filteredItems.length === 0) {
             return;
         }
 
-
         totalResults += filteredItems.length;
-
 
         const sectionElement = document.createElement("section");
 
         sectionElement.className = "menu-section";
         sectionElement.dataset.category = section.id;
-        sectionElement.classList.toggle("chef-special-section", section.id === "chef-special");
-
+        sectionElement.classList.toggle(
+            "chef-special-section",
+            section.id === "chef-special"
+        );
 
         const visual = sectionVisuals[section.category];
 
@@ -2095,6 +2113,35 @@ function renderMenu() {
             </div>
         `;
 
+        if (hasFoodFilter) {
+            content += `
+                <div class="food-preference-filter">
+                    <button
+                        class="food-filter-btn ${selectedType === "all" ? "active" : ""}"
+                        data-section="${section.category}"
+                        data-type="all"
+                    >
+                        ALL
+                    </button>
+
+                    <button
+                        class="food-filter-btn veg-filter ${selectedType === "veg" ? "active" : ""}"
+                        data-section="${section.category}"
+                        data-type="veg"
+                    >
+                        VEG
+                    </button>
+
+                    <button
+                        class="food-filter-btn nonveg-filter ${selectedType === "nonveg" ? "active" : ""}"
+                        data-section="${section.category}"
+                        data-type="nonveg"
+                    >
+                        NON-VEG
+                    </button>
+                </div>
+            `;
+        }
 
         if (section.subcategories) {
 
@@ -2104,11 +2151,9 @@ function renderMenu() {
                     item => item.subcategory === subcategory.name
                 );
 
-
                 if (subItems.length === 0) {
                     return;
                 }
-
 
                 content += `
                     <div class="menu-subcategory">
@@ -2116,9 +2161,7 @@ function renderMenu() {
                         <h3>${subcategory.name}</h3>
 
                         <div class="menu-items">
-
                             ${subItems.map(createFoodCard).join("")}
-
                         </div>
 
                     </div>
@@ -2134,13 +2177,11 @@ function renderMenu() {
             `;
         }
 
-
         sectionElement.innerHTML = content;
 
         menuContainer.appendChild(sectionElement);
 
     });
-
 
     if (totalResults === 0) {
 
@@ -2157,8 +2198,22 @@ function renderMenu() {
             </div>
         `;
     }
-}
 
+    document.querySelectorAll(".food-filter-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const section = button.dataset.section;
+            const type = button.dataset.type;
+
+            sectionFilterState[section] = type;
+
+            renderMenu();
+
+        });
+
+    });
+}
 
 function createFoodCard(item) {
 
@@ -2235,6 +2290,7 @@ searchInput.addEventListener("input", renderMenu);
 ========================= */
 
 renderMenu();
+
 
 
 

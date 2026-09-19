@@ -176,21 +176,9 @@ const menuData = [
           price: "40",
           type: "veg"
         },
-        {
-          name: "Paneer Tikka",
-          price: "250",
-          type: "veg"
-        },
-        {
-          name: "Paneer Pahadi Tikka",
-          price: "280",
-          type: "veg"
-        },
-        {
-          name: "Mushroom Tandoori Tikka",
-          price: "230",
-          type: "veg"
-        },
+        
+        
+        
         {
           name: "Harabara Kabab",
           price: "240",
@@ -509,26 +497,14 @@ const menuData = [
           price: "130",
           type: "nonveg"
         },
-        {
-          name: "Mutton Ghee Roast",
-          price: "400",
-          type: "nonveg"
-        },
-        {
-          name: "Mutton Pepper Fry",
-          price: "370",
-          type: "nonveg"
-        },
+        
+        
         {
           name: "Mutton Chilly",
           price: "310",
           type: "nonveg"
         },
-        {
-          name: "Mutton Fry",
-          price: "320",
-          type: "nonveg"
-        },
+        
         {
           name: "Mutton Rogan Josh",
           price: "360",
@@ -544,16 +520,8 @@ const menuData = [
           price: "450",
           type: "nonveg"
         },
-        {
-          name: "Chicken Tikka",
-          price: "240",
-          type: "nonveg"
-        },
-        {
-          name: "Chicken Achari Tikka",
-          price: "250",
-          type: "nonveg"
-        },
+        
+        
         {
           name: "Chicken Phadi Kabab",
           price: "250",
@@ -609,21 +577,9 @@ const menuData = [
           price: "170",
           type: "nonveg"
         },
-        {
-          name: "Egg Manchurian",
-          price: "170",
-          type: "nonveg"
-        },
-        {
-          name: "Egg 65",
-          price: "190",
-          type: "nonveg"
-        },
-        {
-          name: "Egg Pepper Dry",
-          price: "190",
-          type: "nonveg"
-        },
+        
+        
+        
         {
           name: "Egg Masala",
           price: "170",
@@ -661,21 +617,9 @@ const menuData = [
           price: "350",
           type: "nonveg"
         },
-        {
-          name: "Prawns Pepper Dry",
-          price: "350",
-          type: "nonveg"
-        },
-        {
-          name: "Fish Hariyali Tikka",
-          price: "340",
-          type: "nonveg"
-        },
-        {
-          name: "Tandoori Prawns",
-          price: "380",
-          type: "nonveg"
-        },
+        
+        
+        
         {
           name: "Anjal Fry",
           price: "—",
@@ -696,31 +640,15 @@ const menuData = [
           price: "320",
           type: "nonveg"
         },
-        {
-          name: "Fish Schezwan",
-          price: "310",
-          type: "nonveg"
-        },
+        
         {
           name: "Fish 65/Manchurian/Chilly",
           price: "310",
           type: "nonveg"
         },
-        {
-          name: "Fish Tawa Fry",
-          price: "280",
-          type: "nonveg"
-        },
-        {
-          name: "Fish Tawa Masala Fry",
-          price: "360",
-          type: "nonveg"
-        },
-        {
-          name: "Fish Tikka",
-          price: "360",
-          type: "nonveg"
-        }
+        
+        
+        
         ]
       }
     ]

@@ -288,7 +288,7 @@
         },
         {
           name: "Chilli Chicken",
-          price: "240",
+          price: "325",
           description: "Boneless chicken tossed in a spicy chilli sauce with onions and capsicum. Classic desi Chinese with bold, savory heat.",
           type: "nonveg"
         },
@@ -353,7 +353,7 @@
         
         {
           name: "Prawns Chilli",
-          price: "350",
+          price: "375",
           description: "Crisp prawns tossed in a hot chili sauce with onions and capsicum. A spicy seafood favorite with an Indo Chinese punch.",
           type: "nonveg"
         },
@@ -1099,12 +1099,12 @@
         items: [
         {
           name: "Mutton Ghee Roast",
-          price: "400",
+          price: "475",
           type: "nonveg"
         },
         {
           name: "Mutton Pepper Fry",
-          price: "370",
+          price: "450",
           type: "nonveg"
         },
         {
@@ -1119,17 +1119,17 @@
         },
         {
           name: "Mutton Chilly",
-          price: "310",
+          price: "420",
           type: "nonveg"
         },
         {
           name: "Mutton Fry",
-          price: "320",
+          price: "420",
           type: "nonveg"
         },
         {
           name: "Mutton Rogan Josh",
-          price: "360",
+          price: "460",
           type: "nonveg"
         }
         ]
@@ -1977,15 +1977,3 @@ searchInput.addEventListener("input", renderMenu);
 ========================= */
 
 renderMenu();
-
-
-
-
-
-
-
-
-
-
-
-
